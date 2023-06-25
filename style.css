@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+    font-family: 'Bungee', cursive;
+    font-weight: normal;
+
+    font-family: 'Roboto', sans-serif;
+*/
+
+body {
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(239, 248, 255);
+}
+
+h1, h2, h3,
+nav .links a {
+    font-family: 'Bungee', cursive;
+    font-weight: normal;
+}
+
+header {
+    padding-top: 20px;
+}
+
+.container {
+    max-width: 1080px;
+    padding: 0 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container nav .links {
+    display: flex;
+    gap: 20px;
+}
+
+header .container nav .links a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    position: relative;
+}
+
+header .container nav .links a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 10px;
+    background-color: black;
+}
+
+header .container nav .links a:hover::before {
+    width: 100%;
+    transition: all 0.4s;
+}
+
+header .container a img {
+    position: relative;
+    height: 65px;
+}
+
+#about {
+    padding: 100px 0;
+}
+
+#about .container .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#about .container .content img {
+    width: 600px;
+}
+
+#about .container .content .content-left {
+    max-width: 350px;
+}
+
+#about .container .content .content-left .roseta {
+    padding: 10px;
+    max-width: 168px;
+    border-radius: 100px;
+    background-color: rgba(156, 183, 224, 0.575);
+    color: rgb(52, 133, 255);
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#about .container .content .content-left h1 {
+    line-height: 38px;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+#about .container .content .content-left h1 span {
+    font-size: 30px;
+    text-decoration: underline;
+    color: rgb(52, 133, 255);
+    margin-right: 2px;
+}
+
+#about .container .content .content-left .paragraph {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 40px;
+}
+
+#about .container .content .content-left .paragraph::before {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 134px;
+    border-radius: 5px;
+    background-color: rgb(52, 133, 255);
+    left: 0;
+}
+
+#about .container .content .content-left a {
+    text-decoration: none;
+    padding: 20px;
+    background-color: rgb(52, 133, 255);
+    border-radius: 10px;
+    color: #FFF;
+}
+
+#about .container .content .content-left a:hover {
+    background-color: rgb(21, 62, 122);
+    transition: all 0.4s;
+}
+
+#patrocinio {
+    padding-bottom: 100px;
+}
+
+#patrocinio .container div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#patrocinio .container div img {
+    height: 30px;
+}
+
+#contact {
+    padding-bottom: 100px;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#contact h2, h3 {
+    color: rgb(52, 133, 255);
+}
+
+#contact .container .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#contact .container .content .talk-to-me, .social-links {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact .container .content .talk-to-me form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#contact .container .content .talk-to-me form input, textarea,
+button {
+    font-family: 'Roboto', sans-serif;
+    padding: 8px;
+    width: 320px;
+}
+
+#contact .container .content .talk-to-me form textarea {
+    resize: none;
+    height: 180px;
+}
+
+#contact .container .content .talk-to-me form button {
+    background-color: rgb(52, 133, 255);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: 'Bungee', cursive;
+    font-weight: normal;
+}
+
+#contact .container .content .talk-to-me form button:hover {
+    background-color: rgb(21, 62, 122);
+    transition: all 0.4s;
+}
+
+#contact .container .content .social-links div a img {
+    height: 24px;
+}
+
+#contact .container .content .social-links div {
+    display: flex;
+    gap: 8px;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    padding: 16px 0;
+    color: #fff;
+}
